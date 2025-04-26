@@ -6,9 +6,9 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/naitikjain25/AssessmentRepo.git'
+                git branch: 'main', url: 'https://github.com/naitikjain25/AssessmentRepo.git'
             }
         }
 
